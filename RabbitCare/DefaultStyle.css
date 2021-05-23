@@ -1,0 +1,136 @@
+﻿body {
+    font-family: 'Century Gothic';
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+.intro-background {
+    background-color: #6cc8bf;
+    height: 95vh;
+    padding: 5vh 10vw;
+    color: white;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #ffffff;
+    color: #008e8e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-quote p {
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 0;
+}
+
+.intro-quote {
+    float: left;
+    margin-top: 30vh;
+}
+
+.intro-img {
+    float: right;
+    width: 20vw;
+    margin-top: 23vh;
+}
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    cursor: pointer;
+}
+
+    .scroll-down::before,
+    .scroll-down::after {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        height: 10px;
+        width: 10px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border: 2px solid white;
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 1s ease-in-out infinite;
+    }
+
+    .scroll-down::before {
+        top: 30%;
+        animation-delay: 0.3s;
+        /* animation: scroll-down 1s ease-in-out infinite; */
+    }
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+.arrow-description {
+    font-weight: 600;
+    position: absolute;
+    left: 47%;
+    bottom: -8%;
+}
+
+.content-background, .footer-background {
+    background-color: #008e8e;
+    padding: 5vh 10vw;
+    color: white;
+}
+
+.footer-background {
+    text-align: center;
+}
+
+.showcase-background {
+    padding: 5vh 5vw;
+}
+
+    .showcase-background h1 {
+        text-decoration: underline;
+    }
+
+    .showcase-background .row {
+        margin-left: 5vw;
+    }
+
+        .showcase-background .row img {
+            width: 15vw;
+            margin: 2.5vw;
+        }
+
+.intro-button {
+    margin-top: 15px;
+}
+
+    .intro-button a {
+        font-weight: bold;
+        background-color: #008e8e;
+        padding: 10px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
